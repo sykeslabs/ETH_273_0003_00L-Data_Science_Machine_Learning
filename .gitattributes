@@ -1,0 +1,35 @@
+# Normalise line endings for text files
+* text=auto eol=lf
+
+# Notebooks: treat as text, LF endings, and let GitHub detect them as Jupyter
+*.ipynb text eol=lf linguist-language=Jupyter\ Notebook
+
+# Source & docs
+*.py   text eol=lf diff=python
+*.md   text eol=lf diff=markdown
+*.json text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
+*.txt  text eol=lf
+*.csv  text eol=lf
+
+# Windows scripts keep CRLF
+*.bat  text eol=crlf
+*.cmd  text eol=crlf
+*.ps1  text eol=crlf
+
+# Binary data, models and media
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.pdf  binary
+*.zip  binary
+*.npy  binary
+*.npz  binary
+*.pkl  binary
+*.pt   binary
+*.pth  binary
+*.h5   binary
+*.ckpt binary
+*.safetensors binary
